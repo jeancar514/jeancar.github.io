@@ -167,7 +167,7 @@ formulario.addEventListener('submit', (e) => {
 // comunicacion con el backend
 const envioWhatsapp = document.querySelector('#whatsapp');
 envioWhatsapp.addEventListener('click', ()=>{
-    axios.post("http://127.0.0.1:5000/leo",{
+    axios.post("http://127.0.0.1:5000/",{
     "envio" : "whatsapp"
 })
     .then(resp => console.log(resp.data));
