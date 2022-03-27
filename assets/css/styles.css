@@ -496,6 +496,28 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+@media screen and (max-width: 768px) {
+  .slider_body{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+
+  }
+  .slider_picture{
+    grid-row: 1/2;
+  }
+ .slider_img{
+   width: 280px;
+ }
+ 
+}
+@media screen and (max-width: 520px) {
+ .slider_img{
+   width: 180px;
+   height: 180px;
+ }
+ 
+}
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
