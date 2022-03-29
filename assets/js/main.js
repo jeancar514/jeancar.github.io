@@ -150,7 +150,7 @@ formulario.addEventListener('submit', (e) => {
 
         //backend
         console.log(inputNombre,inputCorreo,inputMensaje)
-        axios.post("http://leoanime514.pythonanywhere.com/",{
+        axios.post("https://leoanime514.pythonanywhere.com/",{
         "envio" : "correo",
         "nombre" : inputNombre,
         "correoelectronico" : inputCorreo,
